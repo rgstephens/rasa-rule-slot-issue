@@ -1,0 +1,289 @@
+Your input ->  /appt                                                                                                                                                                                                 
+2021-08-05 15:27:09 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+2021-08-05 15:27:09 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+2021-08-05 15:27:09 DEBUG    rasa.core.lock_store  - Acquired lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+2021-08-05 15:27:09 DEBUG    rasa.core.tracker_store  - Recreating tracker for id '8bceafa5809445f6ab304acc77a7fb59'
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Received user message '/appt' with intent '{'name': 'appt', 'confidence': 1.0}' and entities '[]'
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 41 events.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user text: /appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.unexpected_intent_policy  - Querying for intent `appt`.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.unexpected_intent_policy  - Score for intent `appt` is `2.2443063259124756`, while threshold is `-0.5656014680862427`.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.unexpected_intent_policy  - Top 5 intents (in ascending order) that are likely here are: `[('mood_unhappy', -1.8392415), ('deny', -1.60123), ('affirm', -1.5513335), ('appt', 2.2443063), ('greet', 2.3881474)]`.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_appt' based on user intent.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ensemble  - Made prediction using user intent.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ensemble  - Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_TEDPolicy.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Predicted next action 'action_appt' with confidence 0.99.
+2021-08-05 15:27:09 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'action_appt'.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x7fab56db4fa0>]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Action 'action_appt' ended with events '[<rasa.shared.core.events.SlotSet object at 0x7fab5bbbd9d0>]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Current slot values: 
+        num_appts: single
+        session_started_metadata: None
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 18] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.unexpected_intent_policy  - Skipping predictions for UnexpecTEDIntentPolicy as either there is no event of type `UserUttered` or there is an event of type `ActionExecuted` after the last `UserUttered`.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'utter_appts' based on user intent.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_TEDPolicy.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Predicted next action 'utter_appts' with confidence 0.99.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Action 'utter_appts' ended with events '[BotUttered('Your num_appts is single', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_appts"}, 1628202429.94996)]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 18] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 19] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.unexpected_intent_policy  - Skipping predictions for UnexpecTEDIntentPolicy as either there is no event of type `UserUttered` or there is an event of type `ActionExecuted` after the last `UserUttered`.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'utter_greet' based on user intent.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_TEDPolicy.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Predicted next action 'utter_greet' with confidence 0.98.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1628202429.960076)]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 18] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 19] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 20] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.unexpected_intent_policy  - Skipping predictions for UnexpecTEDIntentPolicy as either there is no event of type `UserUttered` or there is an event of type `ActionExecuted` after the last `UserUttered`.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_listen' based on user intent.
+2021-08-05 15:27:09 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_TEDPolicy.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2021-08-05 15:27:09 DEBUG    rasa.core.lock_store  - Deleted lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+Your num_appts is single
+Hey! How are you?
+Your input ->  bye                                                                                                                                                                                                   
+2021-08-05 15:27:13 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+2021-08-05 15:27:13 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+2021-08-05 15:27:13 DEBUG    rasa.core.lock_store  - Acquired lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
+2021-08-05 15:27:13 DEBUG    rasa.core.tracker_store  - Recreating tracker for id '8bceafa5809445f6ab304acc77a7fb59'
+2021-08-05 15:27:13 DEBUG    rasa.nlu.classifiers.diet_classifier  - There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2021-08-05 15:27:13 DEBUG    rasa.nlu.selectors.response_selector  - Adding following selector key to message property: default
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Received user message 'bye' with intent '{'id': 5520275194860837182, 'name': 'goodbye', 'confidence': 0.9999877214431763}' and entities '[]'
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 50 events.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 2] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 4] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 18] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 19] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 20] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 21] user text: bye | previous action name: action_listen | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 18] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 19] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 20] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 21] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.unexpected_intent_policy  - Querying for intent `goodbye`.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.unexpected_intent_policy  - Query intent index 5 not found in label thresholds - {0: -1.3246833, 1: -0.56560147, 4: -1.0593777, 6: -0.35174644, 7: -0.6441365, 8: -0.31341654}. Check for `action_unlikely_intent` prediction will be skipped.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_appt' based on user intent.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.ensemble  - Made prediction using user intent.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.ensemble  - Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_1_RulePolicy.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Predicted next action 'action_default_fallback' with confidence 0.30.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x7fab55f5f7c0>]'.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Action 'action_default_fallback' ended with events '[<rasa.shared.core.events.UserUtteranceReverted object at 0x7fab56dbcf10>]'.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Current slot values: 
+        num_appts: single
+        session_started_metadata: None
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 3] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 4] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 5] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 6] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 7] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 8] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 9] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 10] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 11] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 12] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 13] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 14] user intent: appt | previous action name: action_appt | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 15] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 16] user intent: appt | previous action name: utter_happy | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 17] user intent: appt | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 18] user intent: appt | previous action name: action_appt | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 19] user intent: appt | previous action name: utter_appts | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+[state 20] user intent: appt | previous action name: utter_greet | slots: {'num_appts': (0.0, 1.0, 0.0, 0.0)}
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.unexpected_intent_policy  - Skipping predictions for UnexpecTEDIntentPolicy as either there is no event of type `UserUttered` or there is an event of type `ActionExecuted` after the last `UserUttered`.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_listen' based on user intent.
+2021-08-05 15:27:13 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_TEDPolicy.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-08-05 15:27:13 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2021-08-05 15:27:13 DEBUG    rasa.core.lock_store  - Deleted lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
