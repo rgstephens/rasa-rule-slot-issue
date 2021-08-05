@@ -25,9 +25,9 @@ Note this story which calls an action that sets a featurized slot:
 Duplicate the problem with the following dialog:
 
 ```
-/goodbye
+/goodbye   # rule works [here](https://github.com/rgstephens/rasa-rule-slot-issue/blob/9698000fdd81ecb40d988720f0f3b59122628315/debug.log#L26)
 /appt      # if num_appts is set to a value other than "none" the following /goodbye is predicted incorrectly
 /goodbye
 ```
 
-Shell debug log can be view [here](debug.log)
+The full debug log is [here](debug.log). The first /goodbye is correctly predicted by the rule policy as shown in the log [here](https://github.com/rgstephens/rasa-rule-slot-issue/blob/9698000fdd81ecb40d988720f0f3b59122628315/debug.log#L26). After the slot is set, the rule policy says There is no applicable rule [here](https://github.com/rgstephens/rasa-rule-slot-issue/blob/9698000fdd81ecb40d988720f0f3b59122628315/debug.log#L268).
