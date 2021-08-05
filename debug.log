@@ -1,3 +1,55 @@
+Bot loaded. Type a message and press enter (use '/stop' to exit): 
+Your input ->  /goodbye                                                                                                                                                                                              
+2021-08-05 15:36:23 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'c31e83ecb93147b69dd867638704096d'.
+2021-08-05 15:36:23 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'c31e83ecb93147b69dd867638704096d'.
+2021-08-05 15:36:23 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'c31e83ecb93147b69dd867638704096d'.
+2021-08-05 15:36:23 DEBUG    rasa.core.tracker_store  - Could not find tracker for conversation ID 'c31e83ecb93147b69dd867638704096d'.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Starting a new session for conversation ID 'c31e83ecb93147b69dd867638704096d'.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Action 'action_session_start' ended with events '[<rasa.shared.core.events.SessionStarted object at 0x7f878f580d30>, ActionExecuted(action: action_listen, policy: None, confidence: None)]'.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Current slot values: 
+        num_appts: None
+        session_started_metadata: None
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Received user message '/goodbye' with intent '{'name': 'goodbye', 'confidence': 1.0}' and entities '[]'
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 4 events.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user text: /goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.rule_policy  - There is no applicable rule.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.rule_policy  - There is a rule for the next action 'utter_goodbye'.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.unexpected_intent_policy  - Querying for intent `goodbye`.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.unexpected_intent_policy  - Query intent index 5 not found in label thresholds - {0: -1.3246833, 1: -0.56560147, 4: -1.0593777, 6: -0.35174644, 7: -0.6441365, 8: -0.31341654}. Check for `action_unlikely_intent` prediction will be skipped.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'utter_happy' based on user intent.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.ensemble  - Made prediction using user intent.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.ensemble  - Added `DefinePrevUserUtteredFeaturization(False)` event.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_1_RulePolicy.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Predicted next action 'utter_goodbye' with confidence 1.00.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x7f878f580340>]'.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Action 'utter_goodbye' ended with events '[BotUttered('Bye', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_goodbye"}, 1628202983.673444)]'.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+[state 0] slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 1] user intent: goodbye | previous action name: action_listen | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+[state 2] user intent: goodbye | previous action name: utter_goodbye | slots: {'num_appts': (1.0, 0.0, 0.0, 0.0)}
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.rule_policy  - There is a rule for the next action 'action_listen'.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.unexpected_intent_policy  - Skipping predictions for UnexpecTEDIntentPolicy as either there is no event of type `UserUttered` or there is an event of type `ActionExecuted` after the last `UserUttered`.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_listen' based on user intent.
+2021-08-05 15:36:23 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_1_RulePolicy.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-08-05 15:36:23 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2021-08-05 15:36:23 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'c31e83ecb93147b69dd867638704096d'.
+Bye
 Your input ->  /appt                                                                                                                                                                                                 
 2021-08-05 15:27:09 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation '8bceafa5809445f6ab304acc77a7fb59'.
 2021-08-05 15:27:09 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation '8bceafa5809445f6ab304acc77a7fb59'.
