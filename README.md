@@ -26,5 +26,6 @@ Duplicate the problem with the following dialog:
 
 ```
 /goodbye
-
+/appt      # if num_appts is set to a value other than "none" the following /goodbye is predicted incorrectly
+/goodbye
 ```
