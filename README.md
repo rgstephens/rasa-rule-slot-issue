@@ -29,3 +29,5 @@ Duplicate the problem with the following dialog:
 /appt      # if num_appts is set to a value other than "none" the following /goodbye is predicted incorrectly
 /goodbye
 ```
+
+Shell debug log can be view [here](debug.log)
