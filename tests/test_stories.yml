@@ -2,6 +2,44 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
+- story: 'acct_type: basic, more help, agent_available True'
+  steps:
+  - slot_was_set:
+    - acct_type: basic
+  - slot_was_set:
+    - agent_available: True
+  - intent: greet
+  - action: utter_acct_type
+  - action: utter_ask_more_help
+  - intent: affirm
+  - action: utter_doing_agent_xfer
+
+- story: 'acct_type: basic, more help, agent NOT avail'
+  steps:
+  - slot_was_set:
+    - acct_type: basic
+  - slot_was_set:
+    - agent_available: False
+  - intent: greet
+  - action: utter_acct_type
+  - action: utter_ask_more_help
+  - intent: affirm
+  - action: utter_no_agent
+
+- story: 'acct_type: basic, more help, agent avail, goodbye'
+  steps:
+  - slot_was_set:
+    - acct_type: basic
+  - slot_was_set:
+    - agent_available: False
+  - intent: greet
+  - action: utter_acct_type
+  - action: utter_ask_more_help
+  - intent: affirm
+  - action: utter_no_agent
+  - intent: goodbye
+  - action: utter_goodbye
+
 - story: happy path 1
   steps:
   - user: |
@@ -12,17 +50,31 @@ stories:
       amazing
     intent: mood_great
   - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
 
-- story: happy path 2
+- story: goodbye no slots
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye - num_appts slot
+  steps:
+  - slot_was_set:
+    - num_appts: multiple
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye  acct_type slot
+  steps:
+  - slot_was_set:
+    - acct_type: basic
   - user: |
       bye-bye!
     intent: goodbye

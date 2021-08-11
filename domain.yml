@@ -10,14 +10,33 @@ intents:
   - mood_unhappy
   - bot_challenge
 
+entities:
+  - num_appts
+  - acct_type
+  - agent_available
+
 slots:
   num_appts:
     type: categorical
+    auto_fill: true
     influence_conversation: true
     values:
       - none
       - single
       - multiple
+
+  acct_type:
+    type: categorical
+    auto_fill: true
+    influence_conversation: true
+    values:
+      - basic
+      - premium
+
+  agent_available:
+    type: bool
+    auto_fill: true
+    influence_conversation: true
 
 actions:
   - action_appt
@@ -44,6 +63,18 @@ responses:
 
   utter_appts:
   - text: "Your num_appts is {num_appts}"
+
+  utter_acct_type:
+  - text: "Your acct_type is {acct_type}, agent available: {agent_available}"
+
+  utter_ask_more_help:
+  - text: "Do you want more help?"
+
+  utter_doing_agent_xfer:
+  - text: "Transferring you to an agent..."
+
+  utter_no_agent:
+  - text: "We're on siesta time, check back with us later"
 
 session_config:
   session_expiration_time: 60

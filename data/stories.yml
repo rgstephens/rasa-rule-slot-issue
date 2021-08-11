@@ -2,32 +2,29 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: 'acct_type: basic, more help, agent avail'
   steps:
+  - slot_was_set:
+    - acct_type: basic
+  - slot_was_set:
+    - agent_available: True
   - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_acct_type
+  - action: utter_ask_more_help
   - intent: affirm
-  - action: utter_happy
+  - action: utter_doing_agent_xfer
 
-- story: sad path 2
+- story: 'acct_type: basic, more help, agent NOT avail'
   steps:
+  - slot_was_set:
+    - acct_type: basic
+  - slot_was_set:
+    - agent_available: False
   - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - action: utter_acct_type
+  - action: utter_ask_more_help
+  - intent: affirm
+  - action: utter_no_agent
 
 - story: appts none
   steps:
@@ -55,3 +52,30 @@ stories:
         - num_appts: multiple
     - action: utter_appts
     - action: utter_iamabot
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
