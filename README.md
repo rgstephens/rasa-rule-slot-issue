@@ -1,4 +1,6 @@
-Under some circumstances, a rule is ignored when a featurized slot is set. In this example project, note the rule:
+Under some circumstances, a rule is ignored when a featurized slot is set. This issue is being tracked [here](https://github.com/RasaHQ/rasa/issues/9302)
+
+In this example project, note the rule:
 
 ```yml
 - rule: Say goodbye anytime the user says goodbye

@@ -10,14 +10,32 @@ intents:
   - mood_unhappy
   - bot_challenge
 
+entities:
+  - num_appts
+  - logged_in
+  - acct_type
+
 slots:
   num_appts:
     type: categorical
     influence_conversation: true
+    auto_fill: true
     values:
       - none
       - single
       - multiple
+  acct_type:
+    type: categorical
+    influence_conversation: true
+    auto_fill: true
+    values:
+      - standard
+      - premium
+      - multiple
+  logged_in:
+    type: bool
+    influence_conversation: true
+    auto_fill: true
 
 actions:
   - action_appt
